@@ -69,12 +69,13 @@ body {
         linear-gradient(-45deg, #aec3b0 20%, #598392 100%);
     font-family: Arial, Helvetica, sans-serif;
     height: 100%;
+    color: rgb(0, 0, 0);
+    padding-left: 50px;
+    padding-right: 50px;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    width: 85%;
     margin: auto;
     padding-top: 1em;
-
 }
 
 main {
