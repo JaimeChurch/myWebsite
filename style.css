@@ -32,13 +32,15 @@ h2 {
     width: 100%;
     list-style-type: none;
     padding: 0;
+    display: flex;
+    flex-direction: row;
 }
 
 #navbar li {
-    display: block;
-    width: 33%;
-    float: left;
+
     margin-bottom: 20px;
+    flex-basis: 25%;
+
 }
 
 #navbar a {
@@ -88,54 +90,78 @@ main {
     line-height: 1.25em;
 }
 
-#ul {
-    margin-left: auto;
-    margin-right: auto;
-    width: 160px;
-
-}
-
-#ol {
-    float: left;
-    width: 33.3%;
-}
-
-.quote {
-    float: right;
-    width: 33.3%;
-    margin-top: 3em;
-}
-
 q {
     font-style: italic;
 }
 
-
-
 ul,
 ol {
     line-height: 1.5em;
-    margin: .5em;
+}
+
+#section {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3em;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#section h3 {
+    margin-top: 0;
+}
+
+#ol {
+    flex-basis: 28%;
+
+}
+
+.quote {
+    flex-basis: 28%;
+
+}
+
+#ul {
+    flex-basis: 28%;
 }
 
 /* Images formatting*/
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 10px;
 }
 
-.column {
-    flex: 32%;
-    max-width: 32%;
-    padding: 0 4px;
-}
-
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
+.gallery img {
     width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+
+#one {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+
+#two {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 5;
+    grid-row-end: 8;
+}
+
+
+#three {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 5;
 }
 
 /* Footer formatting*/
@@ -154,14 +180,7 @@ footer {
 
 /*Media Queries*/
 
-@media screen and (max-width: 1600px) {
-    .column {
-        flex: 48%;
-        max-width: 48%;
-    }
-}
-
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
     .header {
         width: 80%;
         margin: auto;
@@ -174,16 +193,19 @@ footer {
         float: left;
     }
 
-    #navbar li {
-        display: block;
-        width: 80%;
-        float: none;
-        margin-bottom: 20px;
+    #navbar {
+        width: 100%;
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
     }
 
-    .column {
-        flex: 100%;
-        max-width: 100%;
+    #navbar li {
+
+        margin-bottom: 0;
+        flex-basis: 25%;
+
     }
 
     .header {
@@ -197,5 +219,9 @@ footer {
         font-size: 200%;
         float: none;
         clear: both;
+    }
+
+    #section {
+        flex-direction: column;
     }
 }
