@@ -12,9 +12,8 @@
 </head>
 
 <body>
-
     <nav>
-        <ul>
+        <ul id="navbar">
             <li><a href="index.html" class="navlink">Home</a></li>
             <li><a href="photography.html">Photography</a></li>
             <li><a href="photoshop.html">Photoshop</a></li>
@@ -22,32 +21,77 @@
         </ul>
     </nav>
 
-
-    <header>
+    <div class="header">
         <img src="images/logoElk.png" class="logo" alt="Picture of ThriftyElk logo.">
-        <h1>ThriftyElk Productions.</h1>
-    </header>
+        <h1>ThriftyElk Photography.</h1>
+    </div>
 
     <main>
-        <ul class="gallery">
-            <li class="image">
+        <div class="row">
+            <div class="column">
                 <img src="images/jurassicBark.jpg" alt="Image of Jurassic Bark movie trailer.">
-            </li>
-            <li class="image">
+            </div>
+            <div class="column">
                 <img src="images/bubbles.gif" alt="Gif of bubbles with parallax effect.">
-            </li>
-            <li id="ps3">
+            </div>
+            <div class="column">
                 <img src="images/demonSlayer.jpg" alt="Image of Demon Slayer Photoshop.">
-            </li>
-        </ul>
+            </div>
+        </div>
 
-    </main>
-
-    <footer>
         <p class="return"><a href="#">Return to top.</a></p>
-        &#169; Jaime Church 2023
-    </footer>
-
+        <footer> &#169; Jaime Church 2023</footer>
+    </main>
 </body>
 
 </html>
+
+
+/* Images formatting*/
+
+.row {
+display: flex;
+flex-wrap: wrap;
+padding: 0 4px;
+}
+
+.column {
+flex: 32%;
+max-width: 32%;
+padding: 0 4px;
+align-self: center;
+}
+
+.column img {
+margin-top: 8px;
+width: 100%;
+}
+
+
+#navbar {
+width: 100%;
+list-style-type: none;
+padding: 0;
+}
+
+#navbar li {
+display: block;
+width: 25%;
+float: left;
+margin-bottom: 20px;
+}
+
+#navbar a {
+display: block;
+text-decoration: none;
+padding: 10px;
+margin: 8px;
+border: 1px transparent;
+border-radius: 20px;
+background-color: #124559;
+color: #aec3b0;
+box-shadow: 3px 3px 2px #598392;
+text-align: center;
+font-family: 'Bebas Neue', cursive;
+font-size: 170%;
+}
