@@ -107,22 +107,45 @@ ol {
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    list-style: none;
     justify-content: center;
-    gap: 15px;
 }
 
-.gallery li {
-    height: 400px;
-}
-
-.gallery li img {
+.gallery img {
+    max-height: 400px;
+    padding: 7px;
     object-fit: cover;
-    width: 100%;
-    height: 100%;
-    vertical-align: middle;
 }
 
+
+.PSgallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.PSgallery img {
+    max-height: 400px;
+    padding: 5px;
+}
+
+.gallery img:hover {
+    max-height: 410px;
+    transition: .3s;
+}
+
+#deadEnd {
+    display: block;
+}
+
+.gallery img:not(:hover) {
+    filter: grayscale(.2);
+    transition: .3s;
+}
+
+.gallery img {
+    filter: grayscale(0);
+    transition: .3s;
+}
 
 /* Footer formatting*/
 footer {
