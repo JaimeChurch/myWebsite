@@ -1,0 +1,27 @@
+Peer suggestion 1 (Nathan Mclain): 
+
+    I'm not sure if you are using the "back to top" as placeholder links, 
+    but in my option they don't offer any use to your website while in 
+    desktop sizing. It would be beneficial to add the link to your media 
+    query when the pictures do take up more space and it has a use. 
+    That way it cleans up your website a little. 
+
+Changes made:
+    Added media queries to hide the "Return to top button" when all content 
+    is displayeda single viewport. Removed "Return to top" link from Music page.     
+
+
+Peer suggestion 2 (Nathan Mclain): 
+
+One thing would be cool to see is some sort of description of the photos 
+you took and or edited to give more context to users who may not be super 
+familiar with your work. you could add a hover effect that gives a short 
+description of the photo, or even when you click on an image it 
+brings you to a new page that has more about it. 
+
+
+Changes made:
+    Added hover effect to photography page that displays image 
+    title and location.
+
+
