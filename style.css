@@ -71,8 +71,15 @@ main p {
     line-height: 1.25em;
 }
 
-#music div {
-    padding-bottom: 40px;
+#music {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#music figcaption {
+    padding-bottom: 5px;
 }
 
 /* Images formatting*/
