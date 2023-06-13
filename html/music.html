@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ThriftyElk Productions</title>
     <meta name="description" content="This is my website. There are many like it, but this one is mine.">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 
@@ -25,23 +25,31 @@
 
     <!--Logo and Title-->
     <header>
-        <img src="images/logoElk.png" class="logo" alt="Picture of ThriftyElk logo.">
+        <img src="../images/logoElk.png" class="logo" alt="Picture of ThriftyElk logo.">
         <h1>ThriftyElk Productions.</h1>
     </header>
 
-    <!--Photoshop Gallery-->
-    <main>
-        <div class="PSgallery">
-            <img src="images/jurassicBark.jpg" alt="Image of Jurassic Bark movie poster.">
-            <img src="images/bubbles.gif" alt="Gif of bubbles with parallax effect.">
-            <img src="images/demonSlayer.jpg" alt="Image of Demon Slayer Photoshop.">
-        </div>
+    <!--Music Players-->
+    <main id="music">
+        <figure>
+            <figcaption>&nbsp&nbsp&nbsp&nbsp Hania:</figcaption>
+            <audio controls title="Hania">
+                <source src="../music/Hania(Gm).mp3" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </figure>
+        <figure>
+            <figcaption>&nbsp&nbsp&nbsp&nbsp Aperture Farm 2: </figcaption>
+            <audio controls title="Aperture Farm 2">
+                <source src="../music/ApertureFarmSample.mp3" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </figure>
     </main>
 
     <!--Footer-->
     <footer>
-        <p class="PSreturn"><a href="#">Return to top.</a></p>
-        &#169; Jaime Church 2023
+        &#169; ThriftyElk 2023
     </footer>
 
 </body>
